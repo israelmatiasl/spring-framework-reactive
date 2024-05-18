@@ -38,7 +38,6 @@ public class SaleServiceImpl implements SaleService {
                     existingSale.setPersonId(sale.getPersonId());
                     existingSale.setSaleDate(sale.getSaleDate());
                     existingSale.setAmount(sale.getAmount());
-                    existingSale.setDescription(sale.getDescription());
                     return saleRepository.save(existingSale);
                 });
     }
